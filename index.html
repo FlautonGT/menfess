@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menfess Platform</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Menfess Platform</h1>
+  </header>
+  <main>
+    <div class="options">
+      <span class="option">From</span>
+      <div class="sender-container">
+        <input type="text" id="senderName" placeholder="Nama Anda">
+        <button id="privateButton">Private Name</button>
+      </div>
+    </div>
+    <div class="options">
+      <span class="option">To</span>
+      <div class="recipient-container">
+        <input type="text" id="recipient" placeholder="Kepada">
+      </div>
+    </div>
+    <span class="option">Massage</span>
+    <div class="message-container">
+      <textarea id="message" placeholder="Ketik pesan Anda di sini..." rows="4"></textarea>
+      <button id="sendButton">Kirim</button>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>Mohon isi pesan, nama pengirim, dan kepada.</p>
+        <button id="closePopup">Tutup</button>
+      </div>
+    </div>
+    <div class="option">Menfess :</span>
+    <div id="messages"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
